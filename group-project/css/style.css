@@ -55,4 +55,19 @@ ul {
     width: 100%;
     height: 150px;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+ footer a {
+    height: 50px;
+    width: 50px;
+    color:#feed00;
+  }
+
+  .fa {
+    height: 50px;   
+    width: 50px;
   }
