@@ -1,122 +1,119 @@
 :root{
     --main-margin: 10px;
-
     --main-color: white;
     --secondary-color: #7CB9E8;
     --third-color: #feed00;
 }
-
-
-
-
 
 body{
     margin: 0;
     font-family: "Quicksand";
 }
 
-header {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-}
+/* about-sidans css neråt */
 
-#header-image {
-    width: 70%;
-    height: 70%;
-
-}
-#main-nav{
-    position: sticky; 
-    top: 0px;
-    display: flex;
-    
-
-}
-
-#nav-image{
-    width: 125px;
-    height: 70px;
-  
-    
-
-}
-nav {
-    background-color: #7CB9E8;
-    width: 100%;
-    height: 70px;
-    margin-bottom: var(--main-margin);
-   
-
-}
-
-
-ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    margin-top: var(--main-margin);
-    float: right;
-  
-
-  }
-  
-  li {
-    
-  }
-  
-  li a {
-    display: block;
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "first first first first"
+    "second second second third" 
+    "fourth fourth fourth fourth"
+    "fifth sixth sixth sixth";
+    gap: 30px 25px;
+    margin: 0 40px;
     color: var(--main-color);
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    font-size: 20px;
-  }
+}
 
-  a:hover {
-    color: var(--third-color);
-  }
+#first,
+#second,
+#third,
+#fourth,
+#fifth,
+#sixth {
+    /* border: 1px solid black; */
+    min-height: 150px;
+}
 
-  footer{
+#first {
     background-color: var(--secondary-color);
-    width: 100%;
-    height: 100px;
-    margin-top: var(--main-margin);
-    display: block;
-    
-    
-
-
-  }
-
- footer a {
-    height: 50px;
-    width: 50px;
-    color:var(--third-color);
+    background-image: url('../../picture/');
+    grid-area: first;
     text-align: center;
+    padding-top: 20px;
+}
 
-   
-  }
+#second {
+    grid-area: second;
+    color: black;
+    /* text-align: center; */
+    border-bottom: #999 1px solid;
+}
 
-  .fa {
-    height: 50px;   
-    width: 50px;
-    
-  }
+#third {
+    grid-area: third;
+}
 
-#ikoner{
+#fourth {
+    grid-area: fourth;
+    color: black;
+    /* text-align: center; */
+    border-bottom: #999 1px solid;
+}
+
+#fifth {
+    grid-area: fifth;
+}
+
+#sixth {
+    grid-area: sixth;
+    color: black;
+    /* text-align: center; */
+}
+
+h2 {
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+p {
+    padding: 5px 10px;
+}
+
+img {
+    width: 400px;
+}
+
+/* Vilka vi är sektionen */
+
+.end-section {
+    border: 1px solid black;
+    min-height: 150px;
+}
+
+#last-h2 {
+    text-align: center;
+}
+
+.flex-div {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-footer p{
-    text-align: center;
-    padding-top: 10px;
-    color: var(--main-color);
-    font-weight: bold;
+.pic {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 0 10px;
 }
 
+.bildtext {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0 30px;
+}
+
+.bildtext p {
+    padding: 0 25px;
+}
