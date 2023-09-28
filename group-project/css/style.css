@@ -1,14 +1,4 @@
-:root{
-    --main-margin: 10px;
-
-    --main-color: white;
-    --secondary-color: #7CB9E8;
-    --third-color: #feed00;
-}
-
-
-
-
+@import "variables.css";
 
 body{
     margin: 0;

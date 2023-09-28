@@ -1,0 +1,12 @@
+:root{
+    --main-margin: 10px;
+
+
+    /* Variables for colors */
+    --main-color: white;
+    --secondary-color: #7CB9E8;
+    --third-color: #feed00;
+
+    /* Variables for border */
+    --main-border-style: 1px solid black;
+}
