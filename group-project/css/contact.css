@@ -1,0 +1,151 @@
+@import "variables.css";
+
+*{
+    box-sizing: border-box;
+}
+/* Desktop first */
+#container{
+    display: grid;
+    margin: var(--main-margin) auto;
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "address address address map map map"
+        "contact contact contact contact open open"
+        "logo logo reviews reviews reviews reviews"
+        "leave leave leave leave leave leave";
+}
+
+#find,
+#contact,
+#logotyp{
+    margin-right: var(--main-margin);
+}
+
+#contact,
+#logotyp,
+#open,
+#reviews,
+#leavereview {
+    margin-top: var(--main-margin);
+}
+
+#find,
+#contact,
+#open,
+#leavereview {
+    padding: 10px;
+}
+
+h3{
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: center;
+    text-decoration: underline black;
+}
+
+#find{
+    grid-area: address;
+}
+
+address{
+    margin: var(--main-margin);
+    text-align: center;
+}
+
+#map{
+    grid-area: map;
+}
+
+#img-map{
+    width: 100%;
+    height: auto;
+}
+
+#contact{
+    grid-area: contact;
+}
+
+#contactbox{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#contact section{
+    flex-grow: 1;
+    flex-basis: 250px;
+    margin: 5px var(--main-margin);
+    padding: 10px;
+    text-align: center;
+}
+
+.contactbox2{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.contactbox2 a{
+    width: 100%;
+    height: auto;
+    color: black;
+    text-decoration: none;;
+}
+.contactbox2 a:hover, #leavereview a:hover{
+    color: var(--secondary-color);
+}
+
+
+#logotyp{
+    grid-area: logo;
+    padding-top: 5px;
+}
+
+#img-logo{
+    width: 100%;
+    height: auto;
+}
+
+#open{
+    grid-area: open;
+    text-align: center;
+    /* font-size: 20px; */
+}
+
+#reviews{
+    grid-area: reviews;
+}
+
+#reviews section{
+    border: var(--main-border-style);
+    padding: 10px;
+
+}
+
+#reviews section p{
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+}
+
+.reviewBox2{
+    margin: 10px 0;
+}
+
+#leavereview{
+    grid-area: leave;
+}
+
+#leavereview a{
+    width: 100%;
+    height: auto;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Media Queries */
+/* Small Desktop */
+
+/* Tablet */
+
+/* Phone */
