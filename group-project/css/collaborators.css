@@ -125,21 +125,41 @@ footer p{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 20px;
+  column-gap: 200px;
 }
 
 #grönsak{
   text-align:center;
 }
 
+.p1{
+  width: 300px;
+ 
+}
+
 #bryggeri{
   text-align:center;
+}
+
+.p2{
+  width: 300px;
 }
 
 #kött{
   text-align:center;
 }
 
+.p3{
+  width: 300px;
+}
+
 #matleverans{
   text-align:center;
 }
+
+.p4{
+  width: 300px;
+}
+
+
+
