@@ -127,3 +127,19 @@ footer p{
   grid-template-rows: 1fr 1fr;
   gap: 20px;
 }
+
+#grönsak{
+  text-align:center;
+}
+
+#bryggeri{
+  text-align:center;
+}
+
+#kött{
+  text-align:center;
+}
+
+#matleverans{
+  text-align:center;
+}
