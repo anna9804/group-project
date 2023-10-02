@@ -1,0 +1,48 @@
+@import "variables.css";
+
+#container{
+    border: var(--main-border-style);
+    display: grid;
+    margin: var(--main-margin) auto;
+    width: 80%;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "meny many"
+        "pris regnbage"
+        "mat regnbage"
+        "mat kaldolmar"
+        "mat kaldolmar";
+}
+
+#menu{
+    grid-area: meny;
+    text-align: center;
+    text-decoration: underline black;
+}
+
+#price{
+    grid-area: pris;
+}
+
+#item{
+    grid-area: mat;
+}
+
+
+#regnbage{
+    grid-area: regnbage;
+    width: 100%;
+    height: auto;
+}
+
+#kaldolmar{
+    grid-area: kaldolmar;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
