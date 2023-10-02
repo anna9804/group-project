@@ -25,6 +25,11 @@ body{
     color: var(--main-color);
 }
 
+#undertitle {
+display: flex;
+justify-content: center;
+}
+
 #first,
 #second,
 #third,
@@ -44,6 +49,9 @@ body{
     font-size: 24px;
     margin-bottom: 40px;
 }
+
+
+
 #about {
     font-size: 30px;
 }
@@ -123,9 +131,8 @@ img {
 .pic {
     border-radius: 50%;
     border: 2px solid var(--main-color);
-    height: 150px;
-    width: 150px;
-    margin: 0 10px;
+    height: 175px;
+    width: 100%;
 }
 
 .image-container {
@@ -136,3 +143,47 @@ img {
   figcaption {
     margin-top: 10px; /* marginal över bildtexten */
   }
+
+
+  /* Desktop first */
+
+  /* Tablet */
+@media (max-width: 960px) {
+  
+    .container {
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "first"
+        "second"
+        "third" 
+        "fourth"
+        "sixth"
+        "fifth";
+    }
+
+    #sixth {
+        margin-bottom: 0;
+    }
+    #fifth {
+        margin-bottom: 20px;
+        padding-top: 0;
+    }
+
+    .container-flex {
+    flex-wrap: wrap;
+    margin: auto 40px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #undertitle{
+        display: block;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    #undertitle p{
+        margin: 0 auto;
+    }
+}
