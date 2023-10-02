@@ -183,7 +183,19 @@ img {
         font-size: 20px;
     }
 
-    #undertitle p{
+    #undertitle p {
         margin: 0 auto;
+    }
+    
+    #nav-image {
+        display: none;
+    }
+
+    ul {
+        float: none;
+    }
+
+    li a {
+        font-size: 12px;
     }
 }
