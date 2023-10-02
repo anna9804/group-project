@@ -31,49 +31,62 @@ body{
 #fourth,
 #fifth,
 #sixth {
-    /* border: 1px solid black; */
     min-height: 150px;
 }
 
+/* OM OSS sektion */
 #first {
     background-color: var(--secondary-color);
-    background-image: url('../../picture/');
+    background-image: url('../../picture/pineapple-cut.png');
     grid-area: first;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 60px;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+#about {
+    font-size: 30px;
 }
 
+/* MATEN sektion */
 #second {
     grid-area: second;
     color: black;
-    /* text-align: center; */
-    border-bottom: #999 1px solid;
 }
 
-#third {
+/* Bild */
+#third p{
     grid-area: third;
+    color: black;
+    padding-top: 0;
 }
 
+/* VÅR STORY sektion */
 #fourth {
     grid-area: fourth;
     color: black;
-    /* text-align: center; */
-    border-bottom: #999 1px solid;
+    margin-bottom: 30px;
 }
 
+/* Bild */
 #fifth {
     grid-area: fifth;
+    justify-content: center;
+    padding-top: 25px;
 }
 
+/* HALLBARHET sektion */
 #sixth {
     grid-area: sixth;
     color: black;
-    /* text-align: center; */
+    margin-bottom: 60px;
+    
 }
 
 h2 {
     font-size: 24px;
     padding-left: 10px;
+    margin-top: 0;
 }
 
 p {
@@ -81,39 +94,45 @@ p {
 }
 
 img {
-    width: 400px;
+    width: 300px;
 }
 
 /* Vilka vi är sektionen */
 
 .end-section {
-    border: 1px solid black;
-    min-height: 150px;
+    min-height: 200px;
+    background-color: var(--secondary-color);
+    background-image: url('../../picture/pineapple-cut.png');
+    margin: 0 40px;
 }
 
 #last-h2 {
     text-align: center;
+    padding-top: 40px;
+    color: var(--main-color);
+    font-size: 30px;
 }
 
-.flex-div {
+.container-flex {
     display: flex;
     justify-content: center;
+    color: var(--main-color);
+    padding-bottom: 20px;
 }
 
 .pic {
-    border: 1px solid black;
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    border: 2px solid var(--main-color);
+    height: 150px;
+    width: 150px;
     margin: 0 10px;
 }
 
-.bildtext {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0 30px;
-}
+.image-container {
+    margin: 20px;
+    text-align: center;
+  }
 
-.bildtext p {
-    padding: 0 25px;
-}
+  figcaption {
+    margin-top: 10px; /* marginal över bildtexten */
+  }
