@@ -15,6 +15,7 @@ header {
 #header-image {
     width: 70%;
     height: 70%;
+    margin-bottom: var(--main-margin);
 
 }
 #main-nav{
@@ -111,90 +112,84 @@ footer p{
 }
 
 /**/
-
-h1{
-  background-color: white;
-  width: 90px;
- margin: auto;
- color: var(--secondary-color);
+.container {
+        
+  display: grid;
+  margin: auto;
+  column-gap: 10px;
+  max-width: 80%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "section1 section1"
+  "parent parent"
+  "kontakt kontakt"
+  "sparent sparent"
+  "opem opem" ;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  text-align: center; 
-  padding: 10px;
+#section1{
+grid-area: section1;
+display: flex;
+margin-top: var(--main-margin);
+height: 100vh;
 }
 
-
-
-.content p {
-  flex: 1; 
-  padding: 10px; 
+#texter1{
+text-align: center;
+margin: 10px;
 }
 
-.content img {
-  max-width: 50%; 
-  margin-left: 20px; 
- }
- .content {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  text-align: center; 
-  padding: 10px;
+#bild-section{
+height: 500px;
 }
-
 
 #parent-box{
-  display: flex;
-  min-height: 280px;
+grid-area: parent;
+display: flex;
+height: 100vh;
+text-align: center;
 }
 
-#meny,
-#kontakt{
-  min-height: 200px;
-  text-align: center;
-  margin: 10px; 
-}
+#kontaktlink,
 #menu,
-#section,
-#kontaktlink {
+#samarbetspartner,
+#om-oss{
   color: black;
 }
-  .knapp {
-      width: 100px; 
-      height: 30px; 
-      margin-top: 10px; 
-  }
- 
-  
-  #section-parent{
-      display: flex;
-      width:100%;
-      justify-content: space-around;
-  }
-  #samarbetspartner,
-  #om-oss {
-      margin: 10px;
-      padding: 10px;
-      max-width: 400px;
-      text-align: center;
 
-  }
+.knapp{
+  height: 60px;
+  width: 200px;
+  background-color: var(--secondary-color);
+}
 
-  #open {
-    height: 110px;
-    margin: auto;
-    width: 100%;
-    color:var(--third-color);
-    text-align: center;
-    background-color: var(--secondary-color);
-    margin: 0px;
-  }
-  
-#boka {
-  width: 150px;
-  height: 50px;
+#mat{
+  height:330px;
+}
+
+#kontakt{
+grid-area: kontakt;
+display: flex;
+height: 100vh;
+text-align: center;
+}
+
+#bild-kontakt{
+  max-height: 280px;
+  justify-items: center;
+}
+
+#section-parent{
+grid-area: sparent;
+display: flex;
+text-align: center;
+height: 50vh;
+}
+
+#open{
+grid-area: opem;
+background-color: #7CB9E8;
+min-height: 100;
+text-align: center;
+color: var(--third-color);
 }
