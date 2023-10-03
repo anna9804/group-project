@@ -110,3 +110,91 @@ footer p{
     font-weight: bold;
 }
 
+/**/
+
+h1{
+  background-color: white;
+  width: 90px;
+ margin: auto;
+ color: var(--secondary-color);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  padding: 10px;
+}
+
+
+
+.content p {
+  flex: 1; 
+  padding: 10px; 
+}
+
+.content img {
+  max-width: 50%; 
+  margin-left: 20px; 
+ }
+ .content {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center; 
+  padding: 10px;
+}
+
+
+#parent-box{
+  display: flex;
+  min-height: 280px;
+}
+
+#meny,
+#kontakt{
+  min-height: 200px;
+  text-align: center;
+  margin: 10px; 
+}
+#menu,
+#section,
+#kontaktlink {
+  color: black;
+}
+  .knapp {
+      width: 100px; 
+      height: 30px; 
+      margin-top: 10px; 
+  }
+ 
+  
+  #section-parent{
+      display: flex;
+      width:100%;
+      justify-content: space-around;
+  }
+  #samarbetspartner,
+  #om-oss {
+      margin: 10px;
+      padding: 10px;
+      max-width: 400px;
+      text-align: center;
+
+  }
+
+  #open {
+    height: 110px;
+    margin: auto;
+    width: 100%;
+    color:var(--third-color);
+    text-align: center;
+    background-color: var(--secondary-color);
+    margin: 0px;
+  }
+  
+#boka {
+  width: 150px;
+  height: 50px;
+}
