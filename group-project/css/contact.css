@@ -105,7 +105,7 @@ address{
     height: auto;
 }
 
-#open{
+#open-hours{
     grid-area: open;
     text-align: center;
     /* font-size: 20px; */
