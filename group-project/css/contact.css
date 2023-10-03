@@ -112,7 +112,10 @@ address{
 }
 
 #reviews{
+    display: flex;
     grid-area: reviews;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #reviews section{
@@ -122,6 +125,7 @@ address{
 }
 
 #reviews section p{
+    display: inline;
     width: 100%;
     height: auto;
     font-size: 20px;
@@ -133,19 +137,92 @@ address{
 
 #leavereview{
     grid-area: leave;
+    justify-self: center;
+}
+
+button{
+    background-color: var(--secondary-color);
+    border: none;
+    height: 50px;
+    width: 200px;
+}
+
+button:hover {
+    background-color: #4192cf;
 }
 
 #leavereview a{
     width: 100%;
     height: auto;
-    color: black;
+    color: var(--main-color);
     text-decoration: none;
     text-align: center;
 }
 
+#leavereview a:hover{
+    color: var(--third-color);
+}
+
 /* Media Queries */
 /* Small Desktop */
+@media (max-width: 1200px ) {
+    #container{
+        grid-template-areas: 
+        "address address address map map map"
+        "contact contact contact open open open"
+        "logo logo reviews reviews reviews reviews"
+        "leave leave leave leave leave leave";
+    }
+
+}
 
 /* Tablet */
+@media (max-width: 960px ) {
+    #container{
+        grid-template-areas: 
+        "address address address map map map"
+        "contact contact contact open open open"
+        "logo logo logo reviews reviews reviews"
+        "leave leave leave leave leave leave";
+    }
+
+    #reviews section p{
+        font-size: 15px;
+    }
+
+}
 
 /* Phone */
+@media (max-width: 768px ) {
+    #container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "address"
+        "contact"
+        "open"
+        "reviews"
+        "leave"
+        "logo";
+    }
+
+    #nav-image, #img-map{
+        display: none;
+
+    }
+    
+    ul {
+        float: none;
+    }
+
+    li a {
+        font-size: 12px;
+    }
+
+    #contact section{
+        flex-grow: 1;
+        flex-basis: 280px;
+    }
+
+
+
+}
