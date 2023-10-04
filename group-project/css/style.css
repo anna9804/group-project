@@ -29,6 +29,7 @@ header {
 #nav-image{
     width: 125px;
     height: 70px;
+    margin-left: 5%;
   
     
 
@@ -50,6 +51,7 @@ ul {
     overflow: hidden;
     margin-top: var(--main-margin);
     float: right;
+    margin-right: 5%;
   
 
   }
@@ -115,9 +117,9 @@ footer p{
 .container {
         
   display: grid;
-  margin: auto;
+  margin: 0 auto;
   column-gap: 10px;
-  max-width: 80%;
+  max-width: 90%;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
   "section1 section1"
