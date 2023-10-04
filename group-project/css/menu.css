@@ -4,7 +4,7 @@
     border: var(--main-border-style);
     display: grid;
     margin: var(--main-margin) auto;
-    width: 80%;
+    width: 90%;
     padding: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 

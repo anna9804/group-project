@@ -7,7 +7,7 @@
 #container{
     display: grid;
     margin: var(--main-margin) auto;
-    width: 80%;
+    width: 90%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
         "address address address map map map"
