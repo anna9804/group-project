@@ -25,11 +25,6 @@ body{
     color: var(--main-color);
 }
 
-#undertitle {
-display: flex;
-justify-content: center;
-}
-
 #first,
 #second,
 #third,
@@ -149,6 +144,10 @@ img {
 
   /* Tablet */
 @media (max-width: 960px) {
+
+    ul {
+        justify-content: center;
+    }
   
     .container-about {
         text-align: center;
@@ -177,6 +176,12 @@ img {
 
 /* Mobile */
 @media (max-width: 768px) {
+
+    ul {
+        justify-content: center;
+        margin: 10px auto 0 auto;
+    }
+
     #undertitle{
         display: block;
         margin-bottom: 30px;
