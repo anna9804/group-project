@@ -24,7 +24,7 @@
 
 #contact,
 #logotyp,
-#open,
+#open-hours,
 #reviews,
 #leavereview {
     margin-top: var(--main-margin);
@@ -32,7 +32,7 @@
 
 #find,
 #contact,
-#open,
+#open-hours,
 #leavereview {
     padding: 10px;
 }
@@ -73,7 +73,7 @@ address{
 
 #contact section{
     flex-grow: 1;
-    flex-basis: 250px;
+    flex-basis: 173px;
     margin: 5px var(--main-margin);
     padding: 10px;
     text-align: center;
@@ -119,9 +119,9 @@ address{
 }
 
 #reviews section{
-    border: var(--main-border-style);
+    border-radius: 10px;
     padding: 10px;
-
+    box-shadow: 4px 4px 6px var(--secondary-color);
 }
 
 #reviews section p{
@@ -132,7 +132,7 @@ address{
 }
 
 .reviewBox2{
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 #leavereview{
@@ -141,6 +141,7 @@ address{
 }
 
 button{
+    border-radius: 10px;
     background-color: var(--secondary-color);
     border: none;
     height: 50px;
